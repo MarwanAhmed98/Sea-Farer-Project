@@ -10,4 +10,7 @@ import { NavbarComponent } from "./layouts/Navbar/navbar/navbar.component";
 })
 export class AppComponent {
   title = 'CloudSoftProject';
+  isLoggedIn(): boolean {
+    return !!localStorage.getItem('token');
+  }
 }
