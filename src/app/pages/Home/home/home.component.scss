@@ -1,0 +1,193 @@
+h1,
+label {
+  font-family: "Rubik", serif;
+}
+
+h2,
+td {
+  font-family: "Poppins", serif;
+}
+
+button,
+th {
+  font-family: "Raleway", serif;
+}
+
+.MyTable {
+  margin-top: 100px;
+}
+.alert-message {
+  font-size: 0.9rem;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+.google-pagination {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+
+  .page-link {
+    display: flex;
+    align-items: center;
+    color: #1a0dab;
+    text-decoration: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &.disabled {
+      color: #70757a;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    &:hover:not(.disabled) {
+      color: #174ea6;
+    }
+
+    svg {
+      margin: 0 5px;
+    }
+  }
+
+  .page-numbers {
+    display: flex;
+    gap: 8px;
+
+    .page-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      color: #1a0dab;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.2s, color 0.2s;
+
+      &.active {
+        background-color: #4285f4;
+        color: white;
+        font-weight: bold;
+      }
+
+      &:hover:not(.active) {
+        background-color: #f1f3f4;
+      }
+    }
+  }
+}
+
+td:last-child {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-modal {
+  max-width: 75vw;
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    max-width: 90vw;
+    min-height: auto;
+  }
+  @media (max-width: 576px) {
+    max-width: 95vw;
+  }
+}
+.custom-modal .modal-content {
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    min-height: auto;
+    padding: 10px;
+  }
+  @media (max-width: 576px) {
+    padding: 5px;
+  }
+}
+.MyInput {
+  padding: 5px 60px !important;
+  margin-top: 5px;
+  border-radius: 10px !important;
+
+  @media (max-width: 768px) {
+    padding: 5px 20px !important;
+  }
+
+  @media (max-width: 576px) {
+    padding: 3px 10px !important;
+    margin-top: 3px;
+    font-size: 14px;
+  }
+}
+.MyBtns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  @media (max-width: 576px) {
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+  }
+}
+.AddBtn,
+.filterBtn,
+.DispalyBtn {
+  flex-shrink: 1;
+  min-width: 0;
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 576px) {
+    flex-basis: 100%;
+    margin-bottom: 0.25rem;
+  }
+}
+.AddBtn button,
+.filterBtn button,
+.DispalyBtn button {
+  width: 100%;
+  white-space: normal;
+  padding: 0.5rem 1rem;
+  @media (max-width: 768px) {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+.filterBtn .accordion-body {
+  position: relative;
+  width: 100%;
+  left: 0;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
